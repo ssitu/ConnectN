@@ -1,4 +1,4 @@
-package connectfour;
+package connectn;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ConnectFour {
+public class Game {
 
     private final Scanner sc = new Scanner(System.in);
     private final float PLAYER1MARK = 1;
@@ -45,7 +45,7 @@ public class ConnectFour {
     private final BufferedReader[] inputStreams = new BufferedReader[MAXCONNECTIONS];
     private final PrintStream[] outputStreams = new PrintStream[MAXCONNECTIONS];
 
-    public ConnectFour(int width, int height, int connectNumber) {
+    public Game(int width, int height, int connectNumber) {
         this.WIDTH = width;
         this.HEIGHT = height;
         this.CONNECTNUM = connectNumber;
